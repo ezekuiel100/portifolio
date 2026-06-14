@@ -8,6 +8,27 @@
       name="description"
       content="Coletânea de todos os meus sites e projetos."
     />
+    <meta name="theme-color" content="#0f1220" />
+
+    <!-- Open Graph (preview ao compartilhar no WhatsApp, LinkedIn, etc.) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Meus Sites" />
+    <meta
+      property="og:description"
+      content="Coletânea de todos os meus sites e projetos."
+    />
+    <!-- TODO: troque pela URL real depois de publicar (ex.: https://SEU-USUARIO.github.io/) -->
+    <meta property="og:url" content="" />
+    <!-- TODO: imagem 1200x630 para o preview (ex.: https://SEU-USUARIO.github.io/og-image.png) -->
+    <meta property="og:image" content="" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Meus Sites" />
+    <meta
+      name="twitter:description"
+      content="Coletânea de todos os meus sites e projetos."
+    />
 
     <!-- Favicon simples em emoji -->
     <link
@@ -165,26 +186,11 @@
           transform 0.2s ease,
           background 0.2s ease,
           border 0.2s ease;
-        position: relative;
-        overflow: hidden;
-      }
-      .card::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(135deg, var(--accent), var(--accent-2));
-        opacity: 0;
-        transition: opacity 0.2s ease;
-        z-index: 0;
       }
       .card:hover {
         transform: translateY(-4px);
         background: var(--card-hover);
         border-color: color-mix(in srgb, var(--accent) 40%, var(--border));
-      }
-      .card > * {
-        position: relative;
-        z-index: 1;
       }
 
       .card .icon {
@@ -223,7 +229,7 @@
       }
       .card .tag {
         align-self: flex-start;
-        margin-top: 4px;
+        margin-top: auto;
         font-size: 12px;
         color: var(--accent);
         background: color-mix(in srgb, var(--accent) 12%, transparent);
@@ -317,7 +323,11 @@
         >
           <div class="icon">🌐</div>
           <h3>Ultra Photo<span class="arrow">↗</span></h3>
-          <p>Restaure fotos antigas.</p>
+          <p>
+            Restaure e melhore fotos antigas com inteligência artificial:
+            recupere a nitidez, corrija danos e devolva a cor às suas
+            memórias.
+          </p>
           <span class="tag">Web</span>
         </a>
 
